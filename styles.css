@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "M";
+    src: url(Melodrama-Regular.ttf);
+}
+
+@font-face {
+    font-family: "O";
+    src: url(Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "M";
+    background-color: #fff8fd;
+    /* background-image: url(img/Group.png); */
+    background-image: url(img/receitas.jpg);
+    background-repeat:repeat;
+   
+    
+
+}
+
+header {
+    background-color: #fff6fd;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+
+    color: #553652;
+
+    font-family: "M";
+    font-size: 20px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+nav ul li a:hover {
+    text-decoration-color: #553652;
+}
+
+/* .menu a:hover {
+    text-decoration-color: #553652;
+} */
+
+
+
+
+
+.logo {
+
+    margin: 10px;
+    margin-top: 10px;
+
+}
+
+header h1 {
+    color: #82497c;
+    font-size: 36px;
+    margin: 20px 0;
+    cursor: pointer;
+
+}
+
+main {
+    padding: 20px;
+}
+
+.categoria {
+    background-color: #fff6fd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.categoria h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #553652;
+    font-family: "M";
+}
+
+
+.content {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+
+    content: '▶';
+    color: white;
+    font-size: 24px;
+}
+
+.content img {
+   
+    width: 400px;
+    height: auto;
+
+}
+
+.videos {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    margin: 20px;
+    background-color: black;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 10px;
+
+    position: relative;
+}
+
+.video::before {
+    content: '▶';
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+p {
+
+    text-align: center;
+    font-size: 16px;
+    color: #553652;
+    font-family: "O";
+}
+
+
+
+@media screen and (max-width: 1080px) {
+
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
+    .video {
+        margin: 20px;
+        background-color: black;
+        width: 82px;
+        height: 42px;
+        margin-bottom: 10px;
+
+        position: relative;
+    }
+
+    .content {
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 400px;
+    }  
+
+}
+
+@media screen and (max-width: 800px) {
+ 
+    
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+.content {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 400px;
+}  
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    
+    .content {
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 400px;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    
+    body {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    
+    .content {
+        display: flex;
+        /* justify-content: space-around; */
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }  
+
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family:"melodrama" ;
+    src: url(melodrama.zip);
+}
+
+
+@font-face {
+    font-family:"outfit";
+    src: url(Outfit.zip);
+}
+
+.body {
+    background-color: #EBDEE8;
+}
